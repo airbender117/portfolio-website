@@ -87,7 +87,7 @@ header nav ul li a {
 }
 
 .profile-photo {
-    width: 60%; /* Adjusted to double the size */
+    width: 60%; 
     height: auto;
     border-radius: 10px;
     border: 1px solid #ff7f50;
