@@ -1,21 +1,33 @@
-
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 4rem 0;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background: #333;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -25,49 +37,95 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #ddd;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 2rem;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
 }
 
-section {
-    padding: 4rem 1rem;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 50%;
+    padding: 2rem;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff7f50;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #eaf7fa;
+}
+
+.hero-image {
+    z-index: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 60%; /* Adjusted to double the size */
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ff7f50;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
     text-align: center;
 }
 
-#home {
-    background: #f4f4f4;
+#about {
+    padding: 4rem 0;
+    background: #eaf7fa;
 }
 
-#about, #portfolio, #contact {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
+#about h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #ff7f50;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projects .project-item {
-    width: 300px;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    background: #f9f9f9;
-    transition: transform 0.3s;
-}
-
-.projects .project-item:hover {
-    transform: scale(1.05);
+#about p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
+
+

@@ -5,24 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I am Anurag.</p>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p></p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./images/IMG_0553 (1).JPG"
+          alt="Your Photo"
+          class="profile-photo"
+        />
+      </div>
     </section>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>I like to suffer in JavaScript.</p>
+      <div class="container">
+        <h2>About Me</h2>
+        <p></p>
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2024 My Portfolio</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
