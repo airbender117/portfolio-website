@@ -56,11 +56,11 @@ const Together = () => {
             transition={{duration : 0.4}}
             className='flex flex-col sm:flex-row gap-2 order-0 sm:order-1 sm:gap-6 text-lg text-center w-full sm:w-auto mb-4 sm:mb-0'
           >
-            <a href="" className='hover:underline' target='_blank'>X</a>
-            <a href="" className='hover:underline' target='_blank'>Github</a>
-            <a href="" className='hover:underline' target='_blank'>LinkedIn</a>
-            <a href="" className='hover:underline' target='_blank'>Facebook</a>
-            <a href="" className='hover:underline' target='_blank'>Instagram</a>
+            <a href="https://x.com/Anuragdoss" className='hover:underline' target='_blank'>X</a>
+            <a href="https://github.com/airbender117" className='hover:underline' target='_blank'>Github</a>
+            <a href="https://www.linkedin.com/in/anurag-shrestha-860b63262/" className='hover:underline' target='_blank'>LinkedIn</a>
+            <a href="https://www.facebook.com/Airbender117/" className='hover:underline' target='_blank'>Facebook</a>
+            <a href="https://www.instagram.com/anu7ag_/" className='hover:underline' target='_blank'>Instagram</a>
           </motion.div>
         </footer>
       </div>
