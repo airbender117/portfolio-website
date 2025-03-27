@@ -25,7 +25,7 @@ const HomePage = () => {
             </div>
         </div>
       </div>
-      <p className="absolute text-3xl top-40 left-20 text-black font-josefinSlab">Web developer</p>
+      <p className="absolute text-3xl top-40 left-20 text-black font-josefinSlab">Vibe Coder</p>
       <p className="absolute text-3xl top-52 left-20 text-black font-josefinSlab">Ethical hacker</p>
             <p className="
             text-[50px]
