@@ -71,7 +71,7 @@ const Header = () => {
               <motion.button
                 key={link.name}
                 whileHover={{ y: -2 }}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => link.id && scrollToSection(link.id)}
                 className="text-gray-700 hover:text-gray-900"
               >
                 {link.name}
@@ -122,7 +122,7 @@ const Header = () => {
                 ) : (
                   <button
                     key={link.name}
-                    onClick={() => scrollToSection(link.id)}
+                    onClick={() => link.id && scrollToSection(link.id)}
                     className="text-gray-700 hover:text-gray-900 text-xl"
                   >
                     {link.name}

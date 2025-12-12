@@ -74,15 +74,15 @@ export default function BlogPostPage() {
         <div className="prose prose-lg max-w-none text-slate-800">
           <ReactMarkdown
             components={{
-              h1: ({node, ...props}) => <h1 className="text-3xl font-bold mt-8 mb-4 text-black font-josefinSlab" {...props} />,
-              h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-6 mb-3 text-black font-josefinSlab" {...props} />,
-              h3: ({node, ...props}) => <h3 className="text-xl font-bold mt-4 mb-2 text-black font-josefinSlab" {...props} />,
-              p: ({node, ...props}) => <p className="mb-4 leading-relaxed" {...props} />,
-              ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4 space-y-2" {...props} />,
-              ol: ({node, ...props}) => <ol className="list-decimal list-inside mb-4 space-y-2" {...props} />,
-              li: ({node, ...props}) => <li className="ml-4" {...props} />,
-              strong: ({node, ...props}) => <strong className="font-bold text-black" {...props} />,
-              code: ({node, ...props}) => <code className="bg-slate-200 px-2 py-1 rounded text-sm font-mono" {...props} />,
+              h1: ({ ...props}) => <h1 className="text-3xl font-bold mt-8 mb-4 text-black font-josefinSlab" {...props} />,
+              h2: ({ ...props}) => <h2 className="text-2xl font-bold mt-6 mb-3 text-black font-josefinSlab" {...props} />,
+              h3: ({ ...props}) => <h3 className="text-xl font-bold mt-4 mb-2 text-black font-josefinSlab" {...props} />,
+              p: ({ ...props}) => <p className="mb-4 leading-relaxed" {...props} />,
+              ul: ({ ...props}) => <ul className="list-disc list-inside mb-4 space-y-2" {...props} />,
+              ol: ({ ...props}) => <ol className="list-decimal list-inside mb-4 space-y-2" {...props} />,
+              li: ({ ...props}) => <li className="ml-4" {...props} />,
+              strong: ({ ...props}) => <strong className="font-bold text-black" {...props} />,
+              code: ({ ...props}) => <code className="bg-slate-200 px-2 py-1 rounded text-sm font-mono" {...props} />,
             }}
           >
             {post.content}

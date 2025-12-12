@@ -9,10 +9,11 @@ interface MasonryLayoutProps {
 
 const MasonryLayout: React.FC<MasonryLayoutProps> = ({ children, className }) => {
   const gridRef = useRef<HTMLDivElement>(null);
+  const msnryRef = useRef<Masonry | null>(null);
 
   useEffect(() => {
     if (gridRef.current) {
-      const msnry = new Masonry(gridRef.current, {
+      msnryRef.current = new Masonry(gridRef.current, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-item',
         percentPosition: true,
@@ -22,7 +23,7 @@ const MasonryLayout: React.FC<MasonryLayoutProps> = ({ children, className }) =>
       const images = gridRef.current.querySelectorAll('img');
       images.forEach(img => {
         img.addEventListener('load', () => {
-          msnry.layout();
+          msnryRef.current?.layout();
         });
       });
     }

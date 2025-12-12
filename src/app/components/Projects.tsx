@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 interface Project {
   title: string;
