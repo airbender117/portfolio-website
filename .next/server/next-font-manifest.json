@@ -1,1 +1,17 @@
-{"pages":{},"app":{"/home/Anurag/direc/portfolio-website/src/app/layout":["static/media/4cf2300e9c8272f7-s.p.woff2","static/media/93f479601ee12b01-s.p.woff2","static/media/795471c72dcab0ff-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/direc/portfolio-website/src/app/_not-found/page": [
+      "static/media/3fff9d650c5c9459-s.p.f3a22ced.woff2",
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/direc/portfolio-website/src/app/page": [
+      "static/media/3fff9d650c5c9459-s.p.f3a22ced.woff2",
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"app/components/ClientSkills.tsx -> ./Skills\":{\"id\":\"app/components/ClientSkills.tsx -> ./Skills\",\"files\":[\"static/chunks/_app-pages-browser_src_app_components_Skills_tsx.js\"]}}"
