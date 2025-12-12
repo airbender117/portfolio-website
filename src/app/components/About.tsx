@@ -1,41 +1,60 @@
-import { ArrowUpRight } from "lucide-react"
-// import {motion} from 'motion/react'
-import * as motion from 'motion/react-client'
+import { ArrowUpRight } from "lucide-react";
+import * as motion from "motion/react-client";
 
 const About = () => {
-    const text = `I am Anurag Shrestha, an Electronics, Communication, and Information engineering student with a strong passion for building backend projects using Node.js. I enjoy diving into the complexities of system architecture and creating efficient, scalable solutions. Alongside my interest in backend development, I am also fascinated by Cybersecurity and am always looking for ways to enhance the security of digital infrastructures and applications. Combining my skills in both backend development and cybersecurity, I am eager to contribute to the ever-changing tech world and make a meaningful impact.`
-    const words =text.split(" ");
+  const text = `I'm Anurag Shrestha, an Electronics, Communication, and Information Engineering student who transforms complex problems into elegant, scalable solutions. I specialize in backend development with Node.js, architecting systems that are not just functional, but secure by design. My passion lies at the intersection of software engineering and cybersecurity—building robust infrastructures while defending against evolving threats. Whether I'm crafting efficient APIs, implementing security protocols, or exploring cutting-edge technologies, I'm driven by the challenge of creating digital solutions that matter. Let's build something secure, scalable, and impactful together.`;
+  const words = text.split(" ");
 
-return (
-    <div id="about" className=" h-screen
-            py-8 px-6
-            sm:py-12 sm:px-8
-            md:py-12 md:px-20
-            lg:py-20 lg:px-32
-            bg-black  overflow-hidden">
+  return (
+    <div
+      id="about"
+      className="min-h-screen py-12 px-6 sm:py-16 sm:px-8 md:py-20 md:px-20 lg:py-24 lg:px-32 bg-gray-100 overflow-hidden"
+    >
+      <motion.h2
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-6xl sm:text-8xl md:text-9xl lg:text-[150px] font-mono tracking-tighter text-gray-800 mb-12"
+      >
+        ABOUT
+      </motion.h2>
 
-        <motion.h2 initial={{opacity: 0, y:-100}} whileInView={{opacity:1, y:0}}  transition={{duration : 0.4,delay : 0.5}} 
-         className="text-9xl  md:text-[200px] lg:text-[300px] font-mono tracking-tighter text-white ">ABOUT</motion.h2>
-            
-        <div className="md:flex  my-4 gap-4  relative w-[90%] mx-auto">
-            <motion.div initial={{opacity:0, x:-200, y:200}} whileInView={{opacity:1, x:0, y:0}}  transition={{duration : 0.4, delay:0.5}}  >
-                <ArrowUpRight className="w-[250px] h-[250px] text-white p-0 hidden lg:block ml-auto lg:-mt-12 "/>             
-            </motion.div>
-                <div className="flex flex-wrap text-white lg:w-[80%] text-justify font-josefinSlab text-xl md:text-2xl lg:text-3xl">
-                {words.map((word, index) => (
-                    <motion.span 
-                    key={index}
-                    initial={{opacity:0, x:10,y:10}}
-                    whileInView={{opacity:1, x:0,y:0}}
-                    transition={{duration : 0.4, delay:0.1 * index}}
-                    className=" mr-3 inline-block"
-                    >
-                        {word}
-    
-                    </motion.span>
-                ))}
-                </div> 
-        </div>     
-    </div>   
-) }  
-export default About 
+      <div className="md:flex items-start gap-8 relative w-full max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="hidden lg:block"
+        >
+          <ArrowUpRight className="w-32 h-32 text-gray-700" />
+        </motion.div>
+        <div className="flex flex-wrap text-gray-800 text-justify font-josefinSlab text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
+          {words.map((word, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.02 }}
+              className="mr-2 sm:mr-3 inline-block"
+            >
+              {word}
+            </motion.span>
+          ))}
+        </div>
+      </div>
+
+      <div className="text-center mt-16">
+        <h3 className="text-3xl sm:text-4xl font-bold font-josefinSlab text-gray-900">
+          Education
+        </h3>
+        <p className="text-xl sm:text-2xl mt-4 text-gray-700">
+          BE in Electronics and Information Engineering
+        </p>
+        <p className="text-lg sm:text-xl text-gray-600">
+          Paschimanchal Campus (2021-2025)
+        </p>
+      </div>
+    </div>
+  );
+};
+export default About;
