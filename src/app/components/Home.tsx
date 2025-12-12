@@ -13,10 +13,7 @@ const HomePage = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="z-20 text-center"
       >
-        <p className="text-xl sm:text-3xl text-gray-700 font-josefinSlab mb-2">
-          Full-Stack Developer & Security Enthusiast
-        </p>
-        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-gray-900 tracking-tighter">
+        <h1 className="text-6xl font-extrabold text-gray-900 tracking-tighter">
           ANURAG SHRESTHA
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 font-josefinSlab mt-4 max-w-2xl mx-auto">

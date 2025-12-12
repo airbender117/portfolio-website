@@ -51,7 +51,7 @@ const Header = () => {
             className="flex items-center gap-2 cursor-pointer"
           >
             <Code className="w-8 h-8 text-gray-800" />
-            <span className="text-xl font-bold text-gray-800">Anurag</span>
+
           </motion.div>
         </Link>
 

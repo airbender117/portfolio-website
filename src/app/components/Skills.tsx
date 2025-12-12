@@ -11,14 +11,9 @@ interface SkillCategory {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      title: "Backend Development",
-      icon: <Server className="w-8 h-8" />,
-      skills: ["Node.js", "Express.js", "RESTful APIs", "GraphQL", "PostgreSQL", "MongoDB", "Prisma"],
-    },
-    {
-      title: "Frontend Development",
+      title: "Development",
       icon: <Code className="w-8 h-8" />,
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+      skills: ["Express", "React", "Next.js", "MongoDB"],
     },
     {
       title: "Security",

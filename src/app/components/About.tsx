@@ -2,7 +2,11 @@ import { ArrowUpRight } from "lucide-react";
 import * as motion from "motion/react-client";
 
 const About = () => {
-  const text = `I'm Anurag Shrestha, an Electronics, Communication, and Information Engineering student who transforms complex problems into elegant, scalable solutions. I specialize in backend development with Node.js, architecting systems that are not just functional, but secure by design. My passion lies at the intersection of software engineering and cybersecurity—building robust infrastructures while defending against evolving threats. Whether I'm crafting efficient APIs, implementing security protocols, or exploring cutting-edge technologies, I'm driven by the challenge of creating digital solutions that matter. Let's build something secure, scalable, and impactful together.`;
+  const text = `I am Anurag Shrestha, an Electronics, Communication, and Information Engineering student. I transform complex problems into elegant, scalable solutions. My expertise lies in backend development with Node.js, where I architect systems that are functional and secure by design.
+
+My passion is at the intersection of software engineering and cybersecurity. I build robust infrastructures and defend against evolving threats. I craft efficient APIs, implement security protocols, and explore cutting-edge technologies.
+
+I am driven by the challenge of creating digital solutions that matter. Let's build something secure, scalable, and impactful together.`;
   const words = text.split(" ");
 
   return (
