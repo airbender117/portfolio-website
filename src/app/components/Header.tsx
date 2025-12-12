@@ -31,7 +31,6 @@ const Header = () => {
     { name: 'About', id: 'about' },
     { name: 'Projects', id: 'projects' },
     { name: 'Skills', id: 'skills' },
-    { name: 'Blog', href: '/blog' },
   ];
 
   const mobileMenuVariants = {
@@ -57,27 +56,16 @@ const Header = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) =>
-            link.href ? (
-              <Link key={link.name} href={link.href} passHref>
-                <motion.span
-                  whileHover={{ y: -2 }}
-                  className="text-gray-700 hover:text-gray-900 cursor-pointer"
-                >
-                  {link.name}
-                </motion.span>
-              </Link>
-            ) : (
-              <motion.button
-                key={link.name}
-                whileHover={{ y: -2 }}
-                onClick={() => link.id && scrollToSection(link.id)}
-                className="text-gray-700 hover:text-gray-900"
-              >
-                {link.name}
-              </motion.button>
-            )
-          )}
+          {navLinks.map((link) => (
+            <motion.button
+              key={link.name}
+              whileHover={{ y: -2 }}
+              onClick={() => link.id && scrollToSection(link.id)}
+              className="text-gray-700 hover:text-gray-900"
+            >
+              {link.name}
+            </motion.button>
+          ))}
           <motion.button
             whileHover={{ scale: 1.05 }}
             onClick={() => scrollToSection('connect')}
@@ -109,26 +97,15 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-col items-center gap-8 mt-8">
-              {navLinks.map((link) =>
-                link.href ? (
-                  <Link key={link.name} href={link.href} passHref>
-                    <span
-                      onClick={() => setIsOpen(false)}
-                      className="text-gray-700 hover:text-gray-900 cursor-pointer text-xl"
-                    >
-                      {link.name}
-                    </span>
-                  </Link>
-                ) : (
-                  <button
-                    key={link.name}
-                    onClick={() => link.id && scrollToSection(link.id)}
-                    className="text-gray-700 hover:text-gray-900 text-xl"
-                  >
-                    {link.name}
-                  </button>
-                )
-              )}
+              {navLinks.map((link) => (
+                <button
+                  key={link.name}
+                  onClick={() => link.id && scrollToSection(link.id)}
+                  className="text-gray-700 hover:text-gray-900 text-xl"
+                >
+                  {link.name}
+                </button>
+              ))}
               <button
                 onClick={() => scrollToSection('connect')}
                 className="bg-gray-800 text-white px-6 py-3 rounded-md text-xl"
