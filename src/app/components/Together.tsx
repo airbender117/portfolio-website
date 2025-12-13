@@ -21,7 +21,7 @@ const Together = () => {
           className="flex flex-col items-center sm:items-end"
         >
           <a
-            href="mailto:Anuragshresthal17@gmail.com"
+            href="mailto:Anuragshrestha117@gmail.com"
             className="uppercase text-gray-800 border-2 border-gray-400 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors text-lg font-semibold"
           >
             Send me a message
@@ -97,3 +97,4 @@ const Together = () => {
 };
 
 export default Together;
+
